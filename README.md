@@ -3,12 +3,12 @@
 # DOM
 
 ## Exercícios de classe 🏫
-4.  Slider de depoimentos
-5.  Popup
+1.  Slider de depoimentos
+2.  Popup
 
 ## Exercícios de casa 🏠
-6. Frases motivadoras
-7. Contatos frequentemente contatados
+3. Frases motivadoras
+4. Contatos frequentemente contatados
 
 Preencha a checklist para fazer os exercícios:
 

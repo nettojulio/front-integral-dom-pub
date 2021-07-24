@@ -7,7 +7,15 @@
     <title>Contatos</title>
 
     <style>
-        img{width: 200px; height: 200px; border-radius: 50%;} ul{ list-style: none; }
+        img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+        }
+
+        ul {
+            list-style: none;
+        }
     </style>
 </head>
 
@@ -91,32 +99,18 @@
         descricao: '🐱🐶',
         imagem: `${caminhoImagens}/lurdes.jpg`
     }];
-    
+
     let lista = document.querySelectorAll("li");
 
     contatos.sort((a, b) => b.mensagens - a.mensagens);
     const top5 = contatos.slice(0, 5);
 
-    lista[0].querySelector('img').src = top5[0].imagem;
-    lista[0].querySelector('.nome').textContent = top5[0].nome;
-    lista[0].querySelector('.descricao').textContent = top5[0].descricao;
-
-    lista[1].querySelector('img').src = top5[1].imagem;
-    lista[1].querySelector('.nome').textContent = top5[1].nome;
-    lista[1].querySelector('.descricao').textContent = top5[1].descricao;
-
-    lista[2].querySelector('img').src = top5[2].imagem;
-    lista[2].querySelector('.nome').textContent = top5[2].nome;
-    lista[2].querySelector('.descricao').textContent = top5[2].descricao;
-
-    lista[3].querySelector('img').src = top5[3].imagem;
-    lista[3].querySelector('.nome').textContent = top5[3].nome;
-    lista[3].querySelector('.descricao').textContent = top5[3].descricao;
-
-    lista[4].querySelector('img').src = top5[4].imagem;
-    lista[4].querySelector('.nome').textContent = top5[4].nome;
-    lista[4].querySelector('.descricao').textContent = top5[4].descricao;   
-
+    for (x = 0; x < top5.length; x++) {
+        lista[x].querySelector('img').src = top5[x].imagem;
+        lista[x].querySelector('.nome').textContent = top5[x].nome;
+        lista[x].querySelector('.descricao').textContent = top5[x].descricao;
+    }
+    
 </script>
 
 </html>

@@ -44,6 +44,7 @@
         let exibir2 = document.querySelector(".author");
 
         function changeQuote() {
+
             let y = Math.ceil(Math.random() * 100);
 
             while (y > refeito.length) {
@@ -51,6 +52,7 @@
             }
             exibir1.textContent = refeito[y].frase;
             exibir2.textContent = refeito[y].autor;
+            
         }
     </script>
 </body>
